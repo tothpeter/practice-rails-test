@@ -1,23 +1,21 @@
-# Set up basic rails up with test environment from stratch
+# Set up basic rails app with test environment from scratch
 
 ## This project is using
-- postgresql
+- PostgreSQL
 - RSpec
 - Capybara
 
 ## Create new project
 
-### Create
+### Create rails app
 - rails new PROJECT_NAME -T --database=postgresql
 
-### Database setup
+### Database set up
 - rake db:create
 - rake db:migrate
 - rake db:test:prepare
 
 ### Set up tests
-
-#### Rspec
 - rails g rspec:install
 - bundle exec guard init rspec
 
